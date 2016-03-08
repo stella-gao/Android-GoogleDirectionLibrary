@@ -27,10 +27,10 @@ import java.util.List;
 public class SimpleDirectionActivity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
     private Button btnRequestDirection;
     private GoogleMap googleMap;
-    private String serverKey = "YOUR_SERVER_KEY";
-    private LatLng camera = new LatLng(37.782437, -122.4281893);
-    private LatLng origin = new LatLng(37.7849569, -122.4068855);
-    private LatLng destination = new LatLng(37.7814432, -122.4460177);
+    private String serverKey = "AIzaSyD3Y9TkOv2JxdtxV-cIdXcBuWylpjJovpY";
+    private LatLng camera = new LatLng(40.721111, -74.178323);
+    private LatLng origin = new LatLng(40.744180, -74.179242);
+    private LatLng destination = new LatLng(40.693028, -74.175445);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

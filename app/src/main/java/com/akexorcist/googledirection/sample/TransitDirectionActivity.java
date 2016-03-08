@@ -27,10 +27,11 @@ import java.util.List;
 public class TransitDirectionActivity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
     private Button btnRequestDirection;
     private GoogleMap googleMap;
-    private String serverKey = "YOUR_SERVER_KEY";
-    private LatLng camera = new LatLng(13.7457211, 100.5646619);
-    private LatLng origin = new LatLng(13.7371063, 100.5642539);
-    private LatLng destination = new LatLng(13.7604896, 100.5594266);
+    private String serverKey = "AIzaSyD3Y9TkOv2JxdtxV-cIdXcBuWylpjJovpY";
+
+    private LatLng camera = new LatLng(40.721111, -74.178323);
+    private LatLng origin = new LatLng(40.744180, -74.179242);
+    private LatLng destination = new LatLng(40.693028, -74.175445);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +47,7 @@ public class TransitDirectionActivity extends AppCompatActivity implements OnMap
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 14));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 12));
     }
 
     @Override

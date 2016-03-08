@@ -25,10 +25,12 @@ import java.util.ArrayList;
 public class AlternativeDirectionActivity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
     private Button btnRequestDirection;
     private GoogleMap googleMap;
-    private String serverKey = "YOUR_SERVER_KEY";
-    private LatLng camera = new LatLng(35.1773909, 136.9471357);
-    private LatLng origin = new LatLng(35.1766982, 136.9413508);
-    private LatLng destination = new LatLng(35.1800441, 136.9532567);
+    private String serverKey = "AIzaSyD3Y9TkOv2JxdtxV-cIdXcBuWylpjJovpY";
+
+    private LatLng camera = new LatLng(40.721111, -74.178323);
+    private LatLng origin = new LatLng(40.744180, -74.179242);
+    private LatLng destination = new LatLng(40.693028, -74.175445);
+
     private String[] colors = {"#7fff7272", "#7f31c7c5", "#7fff8a00"};
 
     @Override
@@ -45,7 +47,7 @@ public class AlternativeDirectionActivity extends AppCompatActivity implements O
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 15));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 12));
     }
 
     @Override
